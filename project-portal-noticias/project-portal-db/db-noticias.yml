@@ -13,4 +13,4 @@ spec:
       envFrom: #variavel de ambiente importando todas as configurações do configmap
         - configMapRef:
             name: db-configmap 
-
+ 
