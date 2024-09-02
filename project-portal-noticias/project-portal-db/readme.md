@@ -14,7 +14,7 @@ mysql -u root -p
 
 ```Bash
  show databases; 
- use empresa-teste;
+ use empresa-teste; 
  show tables
  select * from usuario; 
 ```

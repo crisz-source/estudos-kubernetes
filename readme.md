@@ -54,14 +54,12 @@ kubectl apply -f portal-noticias.yml
 kubectl apply -f svc-portal-noticias.yml
 
 #será necessário mudar uma configuração no arquivo portal-configmap.yml
-
 #Quando cria um node, ele pega um ip diferente e precisa adicionar neste campo no arquivo: 
 
 # data:
 # IP_SISTEMA: http://ip-node:30001 #URL da parte de notícias
 
 #para verificar o ip, basta executar os seguinte comando:
-
 kubectl get nodes -o wide
 
 #pegue o INTERNAL-IP e adione em IP_SISTEMA para que frontend comunique com o backend 
@@ -74,5 +72,5 @@ kubectl get svc
 kubectl get configmaps 
 ```
 
-#### 
+## Entre no seu navegador com ip_interno_node:3000
 
