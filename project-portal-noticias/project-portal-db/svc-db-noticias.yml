@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: svc-db-noticias
 spec:
-  type: ClusterIP #criei um clusterIP para que não seja acessado internamente
+  type: ClusterIP #criei um clusterIP para que não seja acessado externamente
   ports:
     - port: 3306 # a porta deste serviço será entrada(porta do container) e saída (porta do serviço no cluster)
   selector:
