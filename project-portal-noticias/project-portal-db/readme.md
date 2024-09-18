@@ -26,3 +26,9 @@ mysql -u root -p
 |         1 | xxxxx | xxxx  |
 +-----------+-------+-------+
 ```
+
+## aplicando os services e configmap
+```Bash
+kubectl apply -f db-configmap.yml
+kubectl apply -f svc-db-noticias.yml
+```

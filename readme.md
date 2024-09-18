@@ -65,12 +65,30 @@ kubectl get nodes -o wide
 #pegue o INTERNAL-IP e adione em IP_SISTEMA para que frontend comunique com o backend 
 ```
 
-#### 4 - Verifique se foi criado tudo corretamente
+# Deploy
+
+## Entre no diretório deploy e execute os comandos:
+
+```Bash
+kubectl apply -f db-noticias-deploy.yml
+#nginx não é necessário
+kubectl apply -f portal-noticias-deploy.yml
+kubectl apply -f sistema-noticias-deploy.yml
+
+
+```
+
+#### x - Verifique se foi criado tudo corretamente
 ```Bash
 kubectl get pods
 kubectl get svc
 kubectl get configmaps 
+kubectl get pvc
+kubectl get pv
+kubectl get sc
+
 ```
 
 ## Entre no seu navegador com ip_interno_node:3000
 
+# Volumes, em construção
