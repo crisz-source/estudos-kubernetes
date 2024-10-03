@@ -89,6 +89,11 @@ kubectl get sc
 
 ```
 
-## Entre no seu navegador com ip_interno_node:3000
+## Entre no seu navegador com ip_interno_node:30000
 
-# Volumes, em construção
+# Volumes, entre no diretório de persistentVOlumeClaim e aplica os volumes
+
+```Bash
+kubectl apply -f pod-sc.yml
+kubectl apply -f pvc-sc.yml
+```
